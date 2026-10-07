@@ -1,67 +1,72 @@
 {
-  "task": "data-eval",
-  "condition": "baseline",
+  "task": "logs-eval",
+  "condition": "skills-auto",
   "role": "eval",
   "error": "GraphRecursionError: Recursion limit of 80 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT",
-  "timestamp": "2026-10-07T03:44:25.637210+00:00",
-  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "seconds": 108.6,
+  "timestamp": "2026-10-07T04:34:12.039685+00:00",
+  "skills_sha256": "e7c834e5157536d497b7f1bc5bd2bbc278aa59dcaa3bfdb2b0dd89dd0e78fb37",
+  "seconds": 71.4,
   "tokens": {
-    "input": 240931,
-    "output": 4533,
-    "total": 245464
+    "input": 313198,
+    "output": 2466,
+    "total": 315664
   },
-  "tool_calls": 40,
+  "tool_calls": 39,
   "subagent_calls": 0,
-  "skills_read": 0,
+  "skills_read": 2,
   "skills_modified": false,
-  "final_message": "[]",
+  "final_message": "hello\n\n[Command succeeded with exit code 0]",
   "score": 0.0,
   "passed": 0,
-  "total": 9,
+  "total": 10,
   "checks": [
     {
-      "name": "march_revenue_utc",
+      "name": "valid_structure",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "march_orders_utc",
+      "name": "entry_count",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "top_category",
+      "name": "timestamps_utc",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "missing_total_orders",
+      "name": "levels_uppercase",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "duplicate_events_removed",
+      "name": "repeat_counts",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "rule_money_in_cents",
+      "name": "counts_by_service",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "rule_meta_block",
+      "name": "rule_service_names",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "rule_clean_csv",
+      "name": "rule_sorted_errors",
       "passed": false,
       "detail": ""
     },
     {
-      "name": "rule_sorted_keys_format",
+      "name": "rule_schema_header",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "rule_source_line",
       "passed": false,
       "detail": ""
     }
